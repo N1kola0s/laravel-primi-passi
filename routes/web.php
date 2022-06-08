@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     
     $personas = [
         'Nome' => 'Nicola',
@@ -22,4 +22,22 @@ Route::get('/', function () {
         'Ruolo'=> 'Boolean Student'
     ];
     return view('home', compact('personas'));
+
 });
+
+Route::get('/about', function () {
+    
+    $about_me = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam commodi alias, debitis molestias nihil dolor accusamus. Ullam, dicta quasi.';
+    return view('about', compact('about_me'));
+    
+});
+
+Route::get('/contacts', function () {
+    
+    $email = 'axxxx.xxx@gmail.com';
+    return view('contacts', compact('email'));
+    
+});
+
+
+

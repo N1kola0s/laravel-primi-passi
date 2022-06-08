@@ -29,19 +29,35 @@
             }
         </style>
     </head>
+    
+    
     <body>
+        <header>
 
-        <h1 class="txt_center pt_6">Hello World</h1>
+            <nav>
 
-        <ul class="txt_center">
+                <a href="/home">Home</a>
+                <a href="/about">About me</a>
+                <a href="/contacts">Contacts</a>
 
-            @foreach($personas as $key => $persona)
-
-                <li>{{$key}} : {{$persona}}</li>
-
-            @endforeach
+            </nav>
             
-        </ul> 
+        </header>
         
+        <main>
+
+            <h1 class="txt_center pt_6">Hello World</h1>
+    
+            <ul class="txt_center">
+    
+                @foreach($personas as $key => $persona)
+    
+                    <li>{{$key}} : {{$persona}}</li>
+    
+                @endforeach
+                
+            </ul> 
+
+        </main> 
     </body>
 </html>
